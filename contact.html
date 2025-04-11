@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Signal Transmission</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1><i class="fa-solid fa-satellite-dish"></i> Transmit a Message</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="location.html">Location</a>
+      <a href="culture.html">Culture</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Request Communication</h2>
+    <p>Use the transmission form below to reach our central archive. Only send signals if absolutely necessary. The Earth frequency is unstable.</p>
+  </section>
+
+  <section class="contact-form">
+    <form name="contactForm" onsubmit="return validateForm()">
+      <label><i class="fa-solid fa-user"></i> Name:<br>
+        <input type="text" name="name" required>
+      </label><br>
+
+      <label><i class="fa-solid fa-envelope"></i> Email:<br>
+        <input type="email" name="email" required>
+      </label><br>
+
+      <label><i class="fa-solid fa-message"></i> Message:<br>
+        <textarea name="message" rows="5" required></textarea>
+      </label><br>
+
+      <input type="submit" value="Send Transmission">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cosmic Communications Network by Sizone Giri</p>
+  </footer>
+
+  <script>
+    function validateForm() {
+      const f = document.forms["contactForm"];
+      if (!f["name"].value || !f["email"].value || !f["message"].value) {
+        alert("Complete all transmission fields.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>

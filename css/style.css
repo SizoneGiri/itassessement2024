@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8a2be2;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #e0e0ff;
+}
+
+nav a {
+    color: #b7b7ff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover, .active {
+    color: #ff80ff;
+    border-bottom: 2px solid #ff80ff;
+}
+
+.intro {
+    padding: 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffb6ff;
+}
+
+.slider {
+    text-align: center;
+    padding: 2rem;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.slider-container img {
+    width: 300px;
+    height: auto;
+    border: 3px solid #ff80ff;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px #d5a3ff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.slider-container img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+    color: #aaa;
+}
+.table-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background: #1d1d2e;
+  box-shadow: 0 0 12px #b67aff;
+}
+
+th, td {
+  border: 1px solid #5e2c91;
+  padding: 12px 18px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th {
+  background: #332b50;
+  color: #ffccff;
+  text-transform: uppercase;
+}
+
+td {
+  color: #d6cfff;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.img-frame {
+  background: #1f1b2e;
+  padding: 1rem;
+  border: 2px solid #b67aff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 12px #a272ff;
+}
+
+.img-frame img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.img-frame p {
+  font-size: 0.9rem;
+  color: #d6cfff;
+  font-style: italic;
+}
+.contact-form {
+  width: 60%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #1c1c2e;
+  border: 2px solid #8c5eff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #7e50ff;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #e0dfff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e2c45;
+  color: white;
+  margin-top: 0.3rem;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #a259ff;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #843eff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.img-frame {
+  background: #1e1b2f;
+  padding: 1rem;
+  border: 2px solid #a259ff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 12px #8e44ad;
+  transition: transform 0.3s ease;
+}
+
+.img-frame:hover {
+  transform: scale(1.03);
+}
+
+.img-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.img-frame p {
+  font-size: 0.9rem;
+  color: #d6cfff;
+  font-style: italic;
+  padding: 0 0.5rem;
+}
+
+
+
+
+
+.typewriter h2 {
+ 
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+
+ 
+  animation: typing 3.5s steps(30);
+}
+
+/* Typing Effect Animation */
+
+@keyframes typing {
+
+  from {
+    width: 0;
+  }
+
+
+  to {
+    width: 100%;
+  }
+}
